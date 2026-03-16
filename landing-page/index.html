@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Roll Dice Game</title>
+</head>
+
+<body>
+    <div id="hero">
+        <div id="nav">
+            <img src="../assets/logo.svg" alt="Roll Dice">
+            <button id="leaderBoard">Leaderboard</button>
+        </div>
+
+        <div id="opasity"></div>
+
+        <div id="main">
+            <button id="gameDetails"><i class="fa-solid fa-circle-info"></i>
+                <p>Game Details</p>
+            </button>
+            <button id="playGame"><i class="fa-solid fa-dice"></i>
+                <p>Play Game</p>
+            </button>
+        </div>
+    </div>
+
+    <div id="gameDetails-modal">
+        <div class="close-btn"><i class="fa-solid fa-square-xmark"></i></div>
+        <div class="contain">
+            <h2>🎲 Roll Dice – Game Details</h2>
+            <p>Ye 2 player turn-based dice game hai. Goal simple hai <strong>Target score pehle complete karo aur
+                    jeeto.</strong></p>
+        </div>
+        <div class="contain">
+            <h3>🔄 Turn Ka System</h3>
+            <ul>
+                <li>Har turn me tum dice roll karte ho.</li>
+                <li>Agar <strong>2–6</strong> aaye to wo number tumhare current score me add hota hai.</li>
+                <li>Phir tum decide karte ho:</li>
+                <li>
+                    <h4>Roll Again</h4> → aur points lene ki koshish (risk bhi hai 😈)
+                </li>
+                <li>
+                    <h4>Hold</h4> → jitne points bane wo total score me save ho jayenge aur turn khatam
+                </li>
+            </ul>
+        </div>
+        <div class="contain">
+            <h3>❌ Agar 1 aa jaye</h3>
+            <ul>
+                <li>Tumhara current score zero ho jata hai</li>
+                <li>Turn turant next player ko chala jata hai</li>
+            </ul>
+        </div>
+        <div class="contain">
+            <h3>🏆 Win Kaise Hoga?</h3>
+            <ul>
+                <li>Jo player <strong>Winning Score</strong> pehle complete kare wo jeet jata hai</li>
+            </ul>
+        </div>
+        <div class="contain">
+            <h3>🔁 New Game</h3>
+            <ul>
+                <li>New Game karne par sab score zero ho jate hain aur Player 1 se game start hoti hai.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="confirmModal">
+        <h2>Have you read the game details?</h2>
+        <div class="btn-group">
+            <button id="yesBtn" style="background-color: green;">Yes</button>
+            <button id="noBtn" style="background-color: red;">No</button>
+        </div>
+    </div>
+
+    <div id="warningModal">
+        <h2>Please read the game details first.</h2>
+        <button id="closeWarning">OK</button>
+    </div>
+
+    <div id="leaderboardModal">
+        <div class="modal-header">
+            <h2>Leaderboard</h2>
+            <span class="close-btn" id="closeLeaderboard">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <div class="leaderboard-table">
+                <div class="leaderboard-header">
+                    <div>Rank</div>
+                    <div>Winner</div>
+                    <div>Loser</div>
+                    <div>Target</div>
+                </div>
+
+                <!-- Example rows -->
+                <div class="leaderboard-row top">
+                    <div>1</div>
+                    <div>Azhar</div>
+                    <div>Ali</div>
+                    <div>6</div>
+                </div>
+                <div class="leaderboard-row">
+                    <div>2</div>
+                    <div>Ahmed</div>
+                    <div>Sara</div>
+                    <div>5</div>
+                </div>
+                <div class="leaderboard-row">
+                    <div>3</div>
+                    <div>Fatima</div>
+                    <div>Bilal</div>
+                    <div>4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="landing.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Dice Game</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="home-main">
+        <div id="nav">
+            <img src="../assets/logo.svg" alt="Roll Dice">
+            <button id="scoreBoard">Scoreboard</button>
+        </div>
+
+        <div id="opasity"></div>
+
+
+        <div id="gameArea">
+            <div id="winScore">
+                <h1 id="target">Winning Target = 20</h1>
+            </div>
+
+            <div id="gameBox">
+                <div id="player1" class="player">
+                    <div class="firstData">
+                        <div class="player-name">
+                            <h1 id="p1Name">Azhar</h1>
+                        </div>
+                        <div class="player-score">
+                            <h2 id="totalScoreP1Ui">0</h2>
+                        </div>
+                    </div>
+                    <div class="secondData">
+                        <p id="turnTrue">🎲 Your Turn</p>
+                        <div class="scoreArea">
+                            <h3>Current</h3>
+                            <p id="currentScoreAreaP1">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="player2" class="player">
+                    <div class="firstData">
+                        <div class="player-name">
+                            <h1 id="p2Name">Nabil</h1>
+                        </div>
+                        <div class="player-score">
+                            <h2 id="totalScoreP2Ui">0</h2>
+                        </div>
+                    </div>
+                    <div class="secondData">
+                        <p id="turnFalse">⏳ Please Wait...</p>
+                        <div class="scoreArea">
+                            <h3>Current</h3>
+                            <p id="currentScoreAreaP2">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="btnsArea">
+                    <button class="newGame">
+                        <img src="../assets/newgame.svg" alt="">
+                        <p>New Game</p>
+                    </button>
+                    <div id="diceImg">
+                        <img src="../assets/static.svg" alt="" id="diceImage">
+                    </div>
+                    <button id="rollDice">
+                        <img src="../assets/rolldice.svg" alt="">
+                        <p>Roll Dice</p>
+                    </button>
+                    <button id="holdDice">
+                        <img src="../assets/hold.svg" alt="">
+                        <p>Hold</p>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mainModal">
+            <h1>Enter Player's Name & Winning Target</h1>
+            <div id="inputs">
+                <input type="text" id="player1Name" placeholder="Player 1 Name">
+                <input type="text" id="player2Name" placeholder="Player 2 Name">
+                <input type="number" id="setTarget" placeholder="only (20-100)">
+                <button id="playGame">
+                    <img src="../assets/playgame.svg" alt="">
+                    <p>Play Game</p>
+                </button>
+            </div>
+        </div>
+
+        <div id="scoreBoardModal">
+            <div class="modal-header">
+                <h2>Scoreboard</h2>
+                <span class="close-btn" id="closescoreBoard">&times;</span>
+            </div>
+
+            <div class="modal-body">
+                <div class="scoreBoard-table">
+                    <div class="scoreBoard-header">
+                        <div>Rank</div>
+                        <div>Winner</div>
+                        <div>Loser</div>
+                        <div>Target</div>
+                    </div>
+
+                    <!-- Example rows -->
+                    <div class="scoreBoard-row top">
+                        <div>1</div>
+                        <div>Azhar</div>
+                        <div>Ali</div>
+                        <div>6</div>
+                    </div>
+                    <div class="scoreBoard-row">
+                        <div>2</div>
+                        <div>Ahmed</div>
+                        <div>Sara</div>
+                        <div>5</div>
+                    </div>
+                    <div class="scoreBoard-row">
+                        <div>3</div>
+                        <div>Fatima</div>
+                        <div>Bilal</div>
+                        <div>4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="winningModal">
+            <h1>🎉 WINNER 🎉</h1>
+            <p id="winnerName">🏆 Azhar is the Winner 🏆</p>
+            <div id="gameBtn">
+                <button class="newGame">
+                    <img src="../assets/newgame.svg" alt="">
+                    <p>New Game</p>
+                </button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <script type="module" src="home.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> -->
+</body>
+
+</html>
