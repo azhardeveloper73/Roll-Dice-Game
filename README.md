@@ -1,6 +1,6 @@
 # 🎲 Roll Dice Game
 
-![Roll Dice Game Thumbnail](./Dice Game Thumbnail.png)
+![Roll Dice Game Thumbnail](./thumbnail.png)
 
 A modern **browser-based Dice Game** built with **HTML, CSS, and JavaScript**.
 Players roll dice, compete for the highest score, and the results are stored in a **live leaderboard** using **Supabase database**.
