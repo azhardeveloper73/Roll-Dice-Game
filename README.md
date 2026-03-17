@@ -12,7 +12,7 @@ This project demonstrates **frontend game logic, database integration, and real-
 ## 🚀 Live Demo
 
 🌐 **Live Website:**
-https://your-firebase-link.web.app
+[https://your-firebase-link.web.app](https://roll-dice-game-3705a.web.app)
 
 📂 **GitHub Repository:**
 https://github.com/azhardeveloper73/Roll-Dice-Game
